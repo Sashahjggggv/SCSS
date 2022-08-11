@@ -107,6 +107,7 @@ body {
 }
 body > * {
   padding: 0 10.4%;
+  width: 100%;
 }
 
 .nav {
@@ -140,13 +141,21 @@ body > * {
 .navigation .btns button.btn1 {
   background: #ff3f40;
 }
+.navigation .btns button.btn1:focus, .navigation .btns button.btn1:hover {
+  transform: scale(1.05);
+  border-radius: 5px;
+}
+.navigation .btns button:focus {
+  background: #ff3f40;
+  border-radius: 5px;
+}
 .navigation .btns button:hover {
   background: #ff3f40;
+  border-radius: 5px;
 }
 
 header {
   height: 688px;
-  width: 100%;
   background: #f6f2f2;
   position: absolute;
   top: 0;
@@ -185,6 +194,9 @@ header button {
   font-weight: 700;
   transition-duration: 0.2s;
 }
+header button:focus {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+}
 header button:hover {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
 }
@@ -201,7 +213,6 @@ header iframe {
 
 section.sec1 {
   position: absolute;
-  width: 100%;
   top: 688px;
   height: 692px;
 }
@@ -243,6 +254,10 @@ section.sec1 .info button {
   line-height: 34.06px;
   letter-spacing: 0.32px;
   transition-duration: 0.2s;
+}
+section.sec1 .info button:focus {
+  background: red;
+  color: #fff;
 }
 section.sec1 .info button:hover {
   background: red;
@@ -309,7 +324,6 @@ section.sec2 {
   position: absolute;
   top: 1375px;
   height: 1160px;
-  width: 100%;
   padding-top: 106px;
 }
 section.sec2 div.text {
@@ -351,11 +365,15 @@ section.sec2 .list a {
   letter-spacing: 0.22px;
   transition-duration: 0.2s;
 }
+section.sec2 .list a:focus {
+  color: #ff2d2d;
+}
 section.sec2 .list a:hover {
   color: #ff2d2d;
 }
 section.sec2 .list a:first-child {
   color: #ff2d2d;
+  margin-right: 20px;
 }
 section.sec2 .cards {
   margin-top: 66px;
@@ -381,7 +399,6 @@ section.sec3 {
   position: absolute;
   top: 2324px;
   height: 956px;
-  width: 100%;
 }
 section.sec3 h2 {
   position: absolute;
@@ -427,7 +444,7 @@ section.sec3 .links {
   position: absolute;
   top: 600px;
   left: 37.2%;
-  width: 32%;
+  width: 40%;
   height: 20px;
   justify-content: space-between;
 }
@@ -441,6 +458,10 @@ section.sec3 .links a {
   color: #000;
   -webkit-text-decoration: 0.2s;
           text-decoration: 0.2s;
+  margin-right: 2%;
+}
+section.sec3 .links a:focus {
+  text-shadow: 1px 1px 1px blueviolet;
 }
 section.sec3 .links a:hover {
   text-shadow: 1px 1px 1px blueviolet;
@@ -465,4 +486,220 @@ section.sec3 .images img {
 }
 section.sec3 .images img:nth-child(2) {
   width: 160px;
+}
+
+section.sec4 {
+  position: absolute;
+  top: 3270px;
+  height: 512px;
+  background: #f5f0dd;
+  text-align: center;
+}
+section.sec4 h2 {
+  margin-top: 120px;
+  opacity: 0.8;
+  color: #ffffff;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 50px;
+}
+section.sec4 p {
+  margin-top: 31px;
+  opacity: 0.8;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 28px;
+}
+section.sec4 form {
+  width: 60.6%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 62px;
+  margin-left: 19.7%;
+}
+section.sec4 form input {
+  width: 68.8%;
+  background: #ffffff;
+  border-radius: 5px;
+  /* Style for "Email Address..." */
+  opacity: 0.7;
+  padding: 0 7%;
+  color: #2c2c2c;
+  font-size: 20px;
+  line-height: 24px;
+  transition-duration: 0.2s;
+}
+section.sec4 form input:focus {
+  box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.5);
+}
+section.sec4 form button {
+  width: 28.2%;
+  border-radius: 5px;
+  background: #ff2d2d;
+  /* Style for "subscribe" */
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition-duration: 0.2s;
+}
+section.sec4 form button:focus {
+  box-shadow: 1px 1px 5px rgba(255, 0, 0, 0.5);
+}
+section.sec4 form button:hover {
+  box-shadow: 1px 1px 5px rgba(255, 0, 0, 0.5);
+}
+section.sec4 form button:active {
+  transform: scale(0.95);
+}
+
+section.sec5 {
+  position: absolute;
+  top: 3782px;
+  height: 985px;
+}
+section.sec5 div:first-child {
+  position: absolute;
+  width: 46.3%;
+}
+section.sec5 div:first-child h2 {
+  position: absolute;
+  top: 106px;
+  opacity: 0.8;
+  font-size: 42px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+section.sec5 div:first-child p {
+  position: absolute;
+  top: 189px;
+  opacity: 0.7;
+  font-size: 16px;
+  line-height: 28px;
+}
+section.sec5 div:first-child hr {
+  position: absolute;
+  top: 316px;
+  background: #ff2d2d;
+  border-radius: 2px;
+  height: 3px;
+  width: 20%;
+}
+section.sec5 div:first-child form {
+  position: absolute;
+  top: 400px;
+  height: 500px;
+  width: 100%;
+}
+section.sec5 div:first-child form div {
+  height: 70px;
+  width: 100%;
+  justify-content: space-between;
+}
+section.sec5 div:first-child form div input {
+  width: 46.3%;
+  height: 100%;
+  padding: 0 6.8%;
+  border-radius: 5px;
+  transition-duration: 0.2s;
+  background: rgba(0, 0, 0, 0.1);
+}
+section.sec5 div:first-child form div input:first-child {
+  margin-right: 6.6%;
+}
+section.sec5 div:first-child form div input:focus {
+  box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.5);
+}
+section.sec5 div:first-child form textarea {
+  position: absolute;
+  top: 121px;
+  height: 249px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  transition-duration: 0.2s;
+  /* Style for "Type your message" */
+  padding: 35px 6.8%;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 16px;
+  line-height: 28px;
+}
+section.sec5 div:first-child form textarea:focus {
+  box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.5);
+}
+section.sec5 div:first-child form button {
+  position: absolute;
+  top: 419px;
+  width: 100%;
+  height: 72px;
+  border-radius: 5px;
+  background-color: #ff3b3b;
+  transition-duration: 0.2s;
+  /* Style for "Send message" */
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 34.06px;
+  text-align: center;
+  text-transform: uppercase;
+}
+section.sec5 div:first-child form button:focus {
+  box-shadow: 1px 1px 5px rgba(255, 0, 0, 0.5);
+}
+section.sec5 div:first-child form button:hover {
+  box-shadow: 1px 1px 5px rgba(255, 0, 0, 0.5);
+}
+section.sec5 div.cont_info:last-child {
+  position: absolute;
+  top: 400px;
+  right: 0;
+  width: 36.5%;
+  height: 500px;
+  padding: 145px 80px;
+  background: #2d2d2d;
+}
+section.sec5 div.cont_info:last-child h5 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 34.06px;
+  text-transform: uppercase;
+}
+section.sec5 div.cont_info:last-child a {
+  display: block;
+  margin-top: 30px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  line-height: 28px;
+}
+section.sec5 div.cont_info:last-child a:hover, section.sec5 div.cont_info:last-child a:focus {
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 3px #fff;
+}
+
+footer {
+  position: absolute;
+  top: 4766px;
+  height: 111px;
+  background-color: #313030;
+  padding: 47px 10.5%;
+}
+footer h6 {
+  color: #b8b8b8;
+  font-size: 16px;
+  line-height: 26px;
+}
+footer div.svg_s {
+  position: absolute;
+  top: 37px;
+  right: 10.5%;
+  width: 190px;
+  height: 33px;
+}
+footer div.svg_s a {
+  margin-right: 15px;
+}
+footer div.svg_s a:last-child {
+  margin-right: 0;
 }
